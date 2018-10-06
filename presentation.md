@@ -58,6 +58,7 @@ protocol. By using Secure HTTP you can make sure that your information is secure
 
 It is a intermediary server between the actual server and the client. So whatever request a browser(client) has to make, it first goes to the Proxy Server. 
 All incoming data enters through one port and is forwarded to the other via another port.
+
 ----
 
 ![Proxy Server](web-proxy.png)
@@ -68,7 +69,9 @@ All incoming data enters through one port and is forwarded to the other via anot
 
 It is availble for Windows, Linux and MacOS. The community version is preinstalled in Kali Linux. So download and install the BurpSuite.
 <br>[Click Here to Download](https://support.portswigger.net/customer/portal/articles/2327557-downloading-burp-software-and-your-license-key)
+
 ----
+
 ### Generating certificate
 
 * Launch Burp Suite
@@ -79,8 +82,10 @@ It is availble for Windows, Linux and MacOS. The community version is preinstall
 
 ----
 ### Importing the certificate
-<br><a href = "https://support.portswigger.net/customer/portal/articles/1783087-installing-burp-s-ca-certificate-in-firefox"> Refer to the link </a>
+[Refer to the link](https://support.portswigger.net/customer/portal/articles/1783087-installing-burp-s-ca-certificate-in-firefox)
+
 ----
+
 ### Setting up proxy in the browser
 
 There is a very good Chrome and Firefox extension available for easy and fast proxy switching called FoxyProxy. Download and install that.
@@ -90,20 +95,25 @@ Now switch on this proxy.
 At this point of time, whatever requests you make will be visible in Burp Suite's HTTP History subtab (in Proxy tab) in clear text.
 
 ----
+
 ### Why do we need proxy server and what is the need to install the certificate ?
 
 Since all the browser traffic now goes through burp's proxy server, thus it helps in intercepting the traffic and analysing it. 
 The reason we install certificates is because we want all the requests and the responses in clear text.
+
 ---
 ## Burp sitemap
 
 The left-hand-side tree view contains a hierarchical representation of content, with URLs broken down into domains, directories, files, and parameterized requests.
+
 ----
 ![Sitemap](sitemap.png)
+
 ----
 ## Scope
 
 It helps to limit the request intercepts to the website or the domain that we define. Thus helps in better analysis, rather than junk from all the websites sitting on the sitemap and HTTP history.
+
 ----
 ![Scope](scope.png)
 
@@ -116,6 +126,7 @@ If the intercept is switched on, the interceptor stops each request from the bro
 
 These requests can also be forwarded to the spider, intruder, repeater, sequencer, comparer or decoder. These things can be performed by the action button.
 It is also possible to intercept the response from the server, tamper and sent out.
+
 ----
 ![Intercept](intercept.png)
 ----
@@ -132,13 +143,17 @@ It contains all the history of the all the requests and responses. Again all the
 "The crawl phase of a scan involves navigating around the application, following links, submitting forms, and logging in where necessary, to catalog the content of the application and the navigational paths within it. This seemingly simple task presents a variety of challenges that Burp's crawler is able to meet, to create an accurate map of the application."
 
 The spider can start from a given page. For eg if you forward a request to spider in the target or http traffic tabs.
+
 ----
+
 Burp's spider can automatically fill forms or perform logins of provided with appropriate detail and continue crawling and creating the directory structure of the website.
 
 The HTTP headers can also be set as we there can be a custom user agent etc.
 
 The spider can also read robots.txt file which specifies some web pages not to crawl. So Burp's Spider tool even crawls those webpages and could find admin logins etc.
+
 ----
+
 ![Spider](spider.png)
 
 ---
@@ -147,6 +162,7 @@ The spider can also read robots.txt file which specifies some web pages not to c
 
 Scanner is not available in community edition of Burp Suite. It is basically a complete framework to scan websites for vulnerablities and create reports.
 Since this is not a part of community edition, I have not taken this up.
+
 ---
 
 ## Intruder
@@ -157,6 +173,7 @@ Payloads can be inserted in any of the parameters.
 The payload marker specifies these parameter on which attack is wanted. Payload marker can be set manually to any parameter and attack can be performed.
 
 Using the intruder, we can brute force logins or try SQl injections or XSS or other web vulnerabilites.
+
 ----
 Since intruder is a massive tool, I recommend to go through the below documentation link.
 
@@ -231,12 +248,13 @@ It is a comprehensive open dictionary of fault injection patterns, predictable r
 This is contains dictionary for alot attacks like SQL Injection, XSS, Server Side Inlcude, error reponse from the server etc. This data can be included in the Burp Suite and accordingly perform Fuzzing.
 Different attacks are contained in https://github.com/fuzzdb-project/fuzzdb/tree/master/attack
 
-
 ---
+
 ## Endnote
 This is the basics of the tools available in Burp. For detailed documentation, visit [Burp Suite tools](https://portswigger.net/burp/documentation/desktop/tools)
 
 To perform tests and practise, you may use http://testphp.vulnweb.com website. It is legal to perform the test on this website subjected to their terms and conditions.
+
 ---
 
 ## References
