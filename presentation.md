@@ -259,11 +259,11 @@ To perform tests and practise, you may use http://testphp.vulnweb.com website. I
 
 ## References
 
-https://www.youtube.com/watch?v=h2duGBZLEek&t=1638s
-https://portswigger.net/burp/documentation/desktop/tools
-https://www.computerweekly.com/tutorial/Burp-Suite-Guide-Part-I-Basic-tools
-https://www.pentestgeek.com/web-applications/burp-suite-tutorial-1
-https://portswigger.net/burp/documentation
-https://kalilinuxtutorials.com/burpsuite/
+* https://www.youtube.com/watch?v=h2duGBZLEek&t=1638s
+* https://portswigger.net/burp/documentation/desktop/tools
+* https://www.computerweekly.com/tutorial/Burp-Suite-Guide-Part-I-Basic-tools
+* https://www.pentestgeek.com/web-applications/burp-suite-tutorial-1
+* https://portswigger.net/burp/documentation
+* https://kalilinuxtutorials.com/burpsuite/
 
 
